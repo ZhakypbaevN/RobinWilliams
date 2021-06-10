@@ -3,8 +3,7 @@ $(function() {
     var header = $("#header"),
         introH = $("#header").innerHeight(),
         scrollOffset = $(window).scrollTop(),
-        doc_w = $(window).width(),
-        company__slider = $("#company__slider");
+        doc_w = $(window).width();
 
 
     /* Fixed Header */
@@ -29,7 +28,7 @@ $(function() {
 
     function company__slider() {
         if ( doc_w < '992'){
-            $(".company__inner").removeChild("company__slider");
+            $(".company__inner").removeClass("company__slider");
         }
     }
 
@@ -90,7 +89,7 @@ $(function() {
 
 
 
-    company__slider.slick({
+    $(".company__slider").slick({
         arrows: false,
         dots: false,
         infinite: true,
