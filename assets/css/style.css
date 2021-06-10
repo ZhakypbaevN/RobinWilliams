@@ -507,6 +507,9 @@ button:focus{
 
 /*Opinion
 ///////////////////////*/
+.opinion .container{
+    padding: 0;
+}
 
 .opinion__inner{
     height: auto;
@@ -515,8 +518,6 @@ button:focus{
     justify-content: space-between;
 
     background: #FFE8CD;
-
-    margin: 0 -40px;
 }
 
 
@@ -653,6 +654,11 @@ button:focus{
 
 /*Company
 //////////////////////////*/
+.company .container{
+    padding: 0;
+}
+
+
 .company__inner{
     width: 100%;
 }
@@ -1360,8 +1366,6 @@ button:focus{
 
 
 
-
-
     /*About
     /////////////////*/
 
@@ -1405,11 +1409,6 @@ button:focus{
 
     .opinion__content{
         padding: 8rem 4rem;
-    }
-
-
-    .company__inner{
-        height: auto;
     }
 
 
@@ -1568,8 +1567,6 @@ button:focus{
     }
 
 
-
-
     .photography__header{
         width: 100%;
     }
@@ -1665,10 +1662,6 @@ button:focus{
         width: 100%;
     }
 
-    .opinion__inner{
-        margin: 0 -20px;
-    }
-
 
     .opinion__title{
         font-size: 4.2rem;
@@ -1693,9 +1686,6 @@ button:focus{
     }
 
 
-    .company__inner{
-        margin: 0 -20px;
-    }
 
     .dribbble{
         margin-top: 1.6rem;
@@ -1797,21 +1787,5 @@ button:focus{
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
