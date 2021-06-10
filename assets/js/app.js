@@ -65,7 +65,7 @@ $(function() {
     let company__slider = $("#company__slider");
 
     company__slider.slick({
-        arrow: false,
+        arrows: false,
         dots: false,
         infinite: true,
         speed: 3000,

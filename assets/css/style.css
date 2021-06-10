@@ -662,8 +662,7 @@ button:focus{
 .company__logo{
     height: 10rem;
     width: 300px;
-
-    display: flex;
+    position: relative;
 
     border: 1px solid #181823;
     background-color: #000;
@@ -672,10 +671,11 @@ button:focus{
 
 
 .company__logo img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
 }
 
 
