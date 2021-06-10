@@ -29,7 +29,7 @@ $(function() {
 
     function company__slider() {
         if ( doc_w < '992'){
-            $(".company__inner").removeClass("company__slider");
+            $(".company__inner").removeChild("company__slider");
         }
     }
 
