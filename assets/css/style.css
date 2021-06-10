@@ -654,15 +654,9 @@ button:focus{
 /*Company
 //////////////////////////*/
 .company__inner{
-    height: 10rem;
-    margin: 0 -40px;
-    overflow: hidden;
+    width: 100%;
 }
 
-.company__all{
-    height: 100px;
-    width: 1800px;
-}
 
 
 .company__logo{
@@ -670,7 +664,6 @@ button:focus{
     width: 300px;
 
     display: flex;
-    float: left;
 
     border: 1px solid #181823;
     background-color: #000;

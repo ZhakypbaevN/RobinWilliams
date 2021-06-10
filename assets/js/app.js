@@ -62,31 +62,18 @@ $(function() {
     });
 
 
+    let company__slider = $("#company__slider");
 
-
-    if ( doc_w > '992'){
-        var show = 4;
-        var w = $('#slider').width() / show;
-        var l = $('.slide').length;
-        $('.slide').width(w);
-        $('#slide-container').width(w * l)
-
-        function slider() {
-            $('.slide:first-child').animate({
-                marginLeft: -w
-            }, 1500, function () {
-                $(this).appendTo($(this).parent()).css({marginLeft: 0});
-            });
-        }
-        var timer = setInterval(slider, 1500);
-
-        $('#slider').hover(function(){
-            clearInterval(timer);
-        },function(){
-            timer = setInterval(slider, 1500);
-        });
-
-    }
+    company__slider.slick({
+        arrow: false,
+        dots: false,
+        infinite: true,
+        speed: 3000,
+        slidesToShow: 5,
+        variableWidth: true,
+        autoplay: true,
+        autoplaySpeed: 500
+    });
 
 
 
