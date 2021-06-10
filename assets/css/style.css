@@ -1477,6 +1477,15 @@ button:focus{
         padding: 8px 40px;
     }
 
+    .nav__link:hover:before{
+        background: none;
+    }
+
+
+    .nav__link:hover:after{
+        width: 0;
+    }
+
     .nav-toggle {
         display: block;
     }

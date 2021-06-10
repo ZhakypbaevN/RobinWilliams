@@ -3,7 +3,8 @@ $(function() {
     var header = $("#header"),
         introH = $("#header").innerHeight(),
         scrollOffset = $(window).scrollTop(),
-        doc_w = $(window).width();
+        doc_w = $(window).width(),
+        company__slider = $("#company__slider");
 
 
     /* Fixed Header */
@@ -50,6 +51,17 @@ $(function() {
     });
 
 
+    $(".nav__link").on("click", function(event) {
+        event.preventDefault();
+
+        $("#nav_toggle").removeClass("active");
+        $("#nav").removeClass("active");
+    });
+
+
+
+
+
 
     /* Collapse */
     $("[data-collapse]").on("click", function(event) {
@@ -62,18 +74,23 @@ $(function() {
     });
 
 
-    let company__slider = $("#company__slider");
 
-    company__slider.slick({
-        arrows: false,
-        dots: false,
-        infinite: true,
-        speed: 3000,
-        slidesToShow: 5,
-        variableWidth: true,
-        autoplay: true,
-        autoplaySpeed: 500
-    });
+
+
+
+    if ( doc_w > '992'){
+        company__slider.slick({
+            arrows: false,
+            dots: false,
+            infinite: true,
+            speed: 3000,
+            slidesToShow: 5,
+            variableWidth: true,
+            autoplay: true,
+            autoplaySpeed: 500
+        });
+
+    }
 
 
 
