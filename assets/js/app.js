@@ -14,6 +14,7 @@ $(function() {
         scrollOffset = $(this).scrollTop();
 
         checkScroll(scrollOffset);
+        company__slider();
     });
 
 
@@ -24,6 +25,15 @@ $(function() {
             header.removeClass("fixed");
         }
     }
+
+
+    function company__slider() {
+        if ( doc_w < '992'){
+            $(".company__inner").removeClass("company__slider");
+        }
+    }
+
+
 
 
     /* Smooth scroll */
@@ -78,9 +88,7 @@ $(function() {
 
 
 
-    if ( doc_w < '992'){
-        company__slider = undefined;
-    }
+
 
     company__slider.slick({
         arrows: false,
