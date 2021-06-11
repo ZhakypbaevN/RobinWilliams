@@ -88,17 +88,19 @@ $(function() {
 
 
 
+    if(doc_w > "992"){
+        $(".company__slider").slick({
+            arrows: false,
+            dots: false,
+            infinite: true,
+            speed: 3000,
+            slidesToShow: 5,
+            variableWidth: true,
+            autoplay: true,
+            autoplaySpeed: 500
+        });
+    }
 
-    $(".company__slider").slick({
-        arrows: false,
-        dots: false,
-        infinite: true,
-        speed: 3000,
-        slidesToShow: 5,
-        variableWidth: true,
-        autoplay: true,
-        autoplaySpeed: 500
-    });
 
 
 
