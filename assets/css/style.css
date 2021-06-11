@@ -1784,6 +1784,16 @@ button:focus{
         grid-template-columns:  1fr;
     }
 
+    .company__logo{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+
+    }
+
+    .company__all .company__logo:first-child{
+        border-top: 1px solid #181823;
+    }
 
 
 }
