@@ -1421,7 +1421,9 @@ button:focus{
 
     .company__logo{
         width: auto;
+        border-right: 1px solid #181823;
     }
+
 
 
 
@@ -1509,6 +1511,8 @@ button:focus{
     .company__all{
         grid-template-columns:  1fr 1fr;
     }
+
+
 
     .projects{
         margin-bottom: 2.2rem;
