@@ -277,7 +277,7 @@ button:focus{
 /*Intro
 ////////////////*/
 .intro__inner{
-    height: calc(100vr - 55px);
+    height: calc(100vh - 55px);
     min-height: 700px;
 
     display: flex;
