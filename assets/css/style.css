@@ -277,7 +277,7 @@ button:focus{
 /*Intro
 ////////////////*/
 .intro__inner{
-    height: calc(100vh - 55px);
+    height: 100vh;
     min-height: 700px;
 
     display: flex;
@@ -1795,7 +1795,7 @@ button:focus{
 
     }
 
-    .company__logo:first-child{
+    .company__all .company__logo:first-child{
         border-top: 1px solid #181823;
     }
 

@@ -13,6 +13,7 @@ $(function() {
         scrollOffset = $(this).scrollTop();
 
         checkScroll(scrollOffset);
+        company__slider();
     });
 
 
@@ -21,6 +22,13 @@ $(function() {
             header.addClass("fixed");
         } else {
             header.removeClass("fixed");
+        }
+    }
+
+
+    function company__slider() {
+        if ( doc_w < '992'){
+            $(".company__inner").removeClass("company__slider");
         }
     }
 
