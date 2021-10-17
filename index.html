@@ -2,565 +2,765 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Robin Williams</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Useful meta tags -->
     <meta name="description" content="Описание страницы" />
-    <meta name="keywords" content="Robin Williams portfolio" />
+    <meta name="keywords" content="продажа товаров" />
     <meta name="google" content="notranslate" />
 
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    
+    <title>Document</title>
 </head>
+
 <body>
-<header class="header" id="header">
-    <div class="container">
-        <div class="header__inner">
-            <a class="header__logo" href="#" data-scroll="#intro">
-                <img src="assets/img/logo_01.svg" alt="">
-            </a>
+<header class="header header__parent">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__col">
+                    <a class="header__shLink" href="#">
+                        <img src="assets/img/SocialNetwork/facebook.svg" alt="facebook">
+                    </a>  
+                    <a class="header__shLink" href="#">
+                        <img src="assets/img/SocialNetwork/instagram.svg" alt="Instagram">
+                    </a>
+                    <a class="header__email" href="">rck@med.mail.kz</a>
 
-            <nav class="nav" id="nav">
-                <a class="nav__link" href="#" data-scroll="#experience">Experience</a>
-                <a class="nav__link" href="#" data-scroll="#work">Work</a>
-                <a class="nav__link" href="#" data-scroll="#photography">Photography</a>
-                <a class="nav__link" href="#" data-scroll="#subscribe">Contact</a>
+                    <a class="header__logo-top" href="/"><img src="assets/img/logos/01.svg" alt=""></a>
+                </div>
+                <div class="header__col">
+                    <a class="header__btn" id="search__btn" href="#">
+                        <img src="assets/img/search.svg" alt="">
+                    </a>
+
+                    <form class="header__lang header__btn" action="/" method="post">
+                        <div class="header__selected">RU</div>
+                        <!-- <select class="header__lang" name="lang" id="lang">
+                            <option class="header__option" value="RU">RU</option>
+                            <option class="header__option" value="KZ">KZ</option>
+                            <option class="header__option" value="EN">EN</option>
+                        </select> -->
+                    </form>
+
+
+                    <a class="header__link" href="https://donorcab.ico.kz/login?next=%2F">Личный кабинет донора</a>
+                    <a class="header__link" href="contacts.html">Контакты</a>
+                    <a class="btn btn__lightRed header__link header__signIn" href="#">Войти</a>
+
+
+                    <button class="nav-toggle" id="nav_toggle" type="button">
+                        <span class="nav-toggle__item">Menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__bottom">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="/"><img src="assets/img/logos/01.svg" alt=""></a>
+                
+                <div class="header__title">РГП на ПХВ "Республиканский центр крови"<br> Министерства здравоохранения Республики Казахстан</div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <nav class="nav">
+                <div class="nav__top">
+                    <div class="container">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">
+                                    <span>О нашем центре</span>
+                                </a>
+    
+                                <ul class="subnav">
+                                    <li>
+                                        <a class="subnav__link" href="mission.html" >
+                                            Миссия Цель Задачи
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="subnav__hasSubnav">
+                                            <a class="subnav__link" href="organStructure.html" >
+                                                Структура центра крови
+                                            </a>
+    
+                                            <ul class="subnav__lvl2">
+                                                <li>
+                                                    <a class="subnav__link subnav__link_lvl2" href="administration.html" >
+                                                        Администрация
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="subnav__link subnav__link_lvl2" href="#" >
+                                                        Структурные подразделения
+                                                    </a>
+                                                </li>
+                                            </ul>
+    
+                                        </duv>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            История РГП на ПХВ «Республиканский центр крови» МЗ РК
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    <span>Информация для доноров</span>
+                                </a>
+    
+                                <ul class="subnav">
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Как стать донором
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Что необходимо знать донору
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Безопасность донации крови и её компонентов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Кровь и ее компоненты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="administration.html" >
+                                            Наши доноры
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Виды донации крови
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Чем полезно донорство
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    <span>Корпоративное управление</span>
+                                </a>
+    
+                                <ul class="subnav">
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Наблюдательный совет
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Служба внутреннего аудита
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Протоколы наблюдательного совета
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Стратегический план
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    <span>Госзакупки</span>
+                                </a>
+    
+                                <ul class="subnav">
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            План государственных закупок 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">
+                                    <span>Финансовая деятельность</span>
+                                </a>
+    
+                                <ul class="subnav">
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Отчёт о финансово-хозяйственной деятельности 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav__item">
+                                <a class="nav__link" href="services.html">
+                                    <span>Услуги</span>
+                                </a>
+    
+                                <ul class="subnav">
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            ГОБМП
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Платные
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">Пресс-центр</a>
+    
+                                <ul class="subnav">
+                                    <li>
+                                        <a class="subnav__link" href="news.html" >
+                                            СМИ о нас
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Истории пациентов
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="#" >
+                                            Новости
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="photoGallery.html" >
+                                            Фотогалерея
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="video.html" >
+                                            Видео
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="interview.html" >
+                                            Интервью
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="subnav__link" href="articles.html" >
+                                            Статьи
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="container">                                   
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Государственные символы РК</a>
+    
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#" >
+                                        Закон о государственных символах РК
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="photoGallery.html" >
+                                        Правила празднования государственных символов РК
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="video.html" >
+                                        Об утверждении правил использования  государственных символов РК
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Антикоррупционная Compliance-служба</a>
+    
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#" >
+                                        Политика по противодействию коррупции
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Нормативные правовые акты</a>
+    
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#" >
+                                        Реестр НПА
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Наши партнёры</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="managerBlog.html">Блог руководителя</a>
+                        </li>
+                    </ul>
+                </div>
+                
             </nav>
-
-            <button class="nav-toggle" id="nav_toggle" type="button">
-                <span class="nav-toggle__item">Menu</span>
-            </button>
         </div>
     </div>
 </header>
 
-<!-- intro -->
-<section class="intro" id="intro">
-    <div class="container">
-        <div class="intro__inner">
-            <div class="intro__preview">
-                <img src="assets/img/intro_photo.jpg" alt="">
-            </div>
-            <div class="intro__content">
-                <h1 class="intro__title">I’m Robin Williams. <br> A Product Designer <br>
-                    <span> based in Italy.</span></h1>
-                <p class="intro__subtitle">I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.</p>
-            </div>
-            <div class="intro__background"></div>
-        </div>
-    </div>
-</section>
-
-<!-- experience -->
-<section class="experience section" id="experience">
-    <div class="container">
-        <div class="section__subtitle">work experience</div>
-        <h2 class="section__title experience__title">Companies I have worked for in the past</h2>
-        <div class="experience__works">
-            <div class="experience__work">
-                <div class="experience__num">01</div>
-                <h3 class="experience__work_title"><span class="experience__green">Google</span>, Interaction Designer</h3>
-                <p class="experience__info">I currently am the lead designer on the interaction design team for Google Play.</p>
-            </div>
-
-            <div class="experience__work">
-                <div class="experience__num">02</div>
-                <h3 class="experience__work_title"><span class="experience__blue">Facebook</span>, Product Designer</h3>
-                <p class="experience__info">I’ve worked on a wide variety of internal tools for facebook over the past 6 years.</p>
-            </div>
-
-            <div class="experience__work">
-                <div class="experience__num">03</div>
-                <h3 class="experience__work_title"><span class="experience__pink">Dribbble</span>, Graphic Designer</h3>
-                <p class="experience__info">I started my design career with Dribbble. I was incharge of creating illustrations for the platform.</p>
+<div class="main">
+    <div class="section">
+        <div class="container">
+            <div class="regulations__inner">
+                <div class="regulations__main">
+                    <div class="regulations__preview">
+                        <img src="assets/img/regulations/regulations.jpg" alt="Послание Главы государства Касым-Жомарта Токаева народу Казахстана">
+                    </div>
+                    <div class="regulations__content">
+                        <a class="regulations__title regulations__link" href="#">Послание Главы государства Касым-Жомарта Токаева народу Казахстана</a>
+                        <a class="regulations__link" href="#">О ЗДОРОВЬЕ НАРОДА И СИСТЕМЕ ЗДРАВООХРАНЕНИЯ (Кодекс Республики Казахстан от 7 июля 2020 года № 360-VI ЗРК.)</a>
+                        <a class="regulations__link" href="#">Об утверждении Санитарных правил «Санитарно-эпидемиологические требования к объектам здравоохранения» (Приказ Министра здравоохранения Республики Казахстан от 11 августа 2020 года № ҚР ДСМ -96/2020)</a>
+                    </div>
+                </div>
+                <a class="regulations__btn btn btn__red" href="#">Другие НПА</a>   
             </div>
         </div>
     </div>
-</section>
-
-<!-- opinion -->
-<section class="opinion">
-    <div class="container">
-        <div class="opinion__inner">
-            <div class="opinion__content">
-                <div>
-                    <h2 class="opinion__title">Philosophy &amp; values</h2>
-                    <p class="opinion__text">I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, &amp; hospitality.</p>
+    
+    <section class="section">
+        <div class="container">
+            <div class="dashboard__inner">
+                <h2 class="section__title">Информация для доноров</h2>
+                <div class="dashboard__items">
+                    <a class="dashboard__item" href="#">
+                        <img class="dashboard__preview" src="assets/img/dashboards/01.jpg" alt="Как стать донором">
+                        <p class="dashboard__text">Как стать донором</p>
+                    </a>
+                    <a class="dashboard__item" href="#">
+                        <img class="dashboard__preview" src="assets/img/dashboards/02.jpg" alt="Как стать донором">
+                        <p class="dashboard__text">Что должен знать донор</p>
+                    </a>
+                    <a class="dashboard__item" href="#">
+                        <img class="dashboard__preview" src="assets/img/dashboards/03.jpg" alt="Как стать донором">
+                        <p class="dashboard__text">О безопасности донации крови и её компонентов</p>
+                    </a>
+                    <a class="dashboard__item" href="#">
+                        <img class="dashboard__preview" src="assets/img/dashboards/04.jpg" alt="Как стать донором">
+                        <p class="dashboard__text">Кровь и ее компоненты</p>
+                    </a>
+                    <a class="dashboard__item" href="#">
+                        <img class="dashboard__preview" src="assets/img/dashboards/05.jpg" alt="Как стать донором">
+                        <p class="dashboard__text">Наши доноры</p>
+                    </a>
+                    <a class="dashboard__item" href="#">
+                        <img class="dashboard__preview" src="assets/img/dashboards/06.jpg" alt="Как стать донором">
+                        <p class="dashboard__text">Чем полезно донорство</p>
+                    </a>
+                    <a class="dashboard__item" href="#">
+                        <img class="dashboard__preview" src="assets/img/dashboards/07.jpg" alt="Как стать донором">
+                        <p class="dashboard__text">Доноры быстрого реагирования 24/7</p>
+                    </a>
+                    <a class="dashboard__item" href="#">
+                        <img class="dashboard__preview" src="assets/img/dashboards/08.jpg" alt="Как стать донором">
+                        <p class="dashboard__text">Виды донации крови</p>
+                    </a>
+                    <a class="dashboard__item" href="#">
+                        <img class="dashboard__preview" src="assets/img/dashboards/09.jpg" alt="Как стать донором">
+                        <p class="dashboard__text">Процедура сдачи крови</p>
+                    </a>
                 </div>
-
-                <a class="section__link" href="#" target="_blank">More about me</a>
-
-
-
             </div>
-            <div class="opinion__preview">
-                <div>
-                    <img src="assets/img/opinion_1.jpg" alt="">
+        </div>
+    </section>
+    
+    
+    <section class="section">
+        <div class="container">
+            <div class="bloodReserves__inner">
+                <h2 class="section__title bloodReserves__title">Текущий уровень запасов крови в<br> Республиканском центре крови</h2>
+                <time class="bloodReserves__date" datetime="2021-09-23 19:00">Четверг, 23 сентября</time>
+                <div class="bloodReserves__block">
+                    <div class="bloodReserves__items">
+                        <div class="bloodReserves__item">
+                            <div class="bloodReserves__info">
+                                <div class="bloodReserves__container">O-</div>
+                                <div class="bloodReserves__blood"></div>
+                                <div class="bloodReserves__bottom"></div>
+                            </div>
+                            <p class="bloodReserves__term"><span>4</span><br> дня</p>
+                        </div>
+                        <div class="bloodReserves__item">
+                            <div class="bloodReserves__info">
+                                <div class="bloodReserves__container">A-</div>
+                                <div class="bloodReserves__blood"></div>
+                                <div class="bloodReserves__bottom"></div>
+                            </div>
+                            <p class="bloodReserves__term"><span>4</span><br> дня</p>
+                        </div>
+                        <div class="bloodReserves__item">
+                            <div class="bloodReserves__info">
+                                <div class="bloodReserves__container">B-</div>
+                                <div class="bloodReserves__blood"></div>
+                                <div class="bloodReserves__bottom"></div>
+                            </div>
+                            <p class="bloodReserves__term"><span>4</span><br> дня</p>
+                        </div>
+                        <div class="bloodReserves__item">
+                            <div class="bloodReserves__info">
+                                <div class="bloodReserves__container">AB-</div>
+                                <div class="bloodReserves__blood"></div>
+                                <div class="bloodReserves__bottom"></div>
+                            </div>
+                            <p class="bloodReserves__term"><span>4</span><br> дня</p>
+                        </div>
+                    </div>
+                    <div class="bloodReserves__items">
+                        <div class="bloodReserves__item">
+                            <div class="bloodReserves__info">
+                                <div class="bloodReserves__container">O+</div>
+                                <div class="bloodReserves__blood"></div>
+                                <div class="bloodReserves__bottom"></div>
+                            </div>
+                            <p class="bloodReserves__term"><span>4</span><br> дня</p>
+                        </div>
+                        <div class="bloodReserves__item">
+                            <div class="bloodReserves__info">
+                                <div class="bloodReserves__container">A+</div>
+                                <div class="bloodReserves__blood"></div>
+                                <div class="bloodReserves__bottom"></div>
+                            </div>
+                            <p class="bloodReserves__term"><span>4</span><br> дня</p>
+                        </div>
+                        <div class="bloodReserves__item">
+                            <div class="bloodReserves__info">
+                                <div class="bloodReserves__container">B+</div>
+                                <div class="bloodReserves__blood"></div>
+                                <div class="bloodReserves__bottom"></div>
+                            </div>
+                            <p class="bloodReserves__term"><span>4</span><br> дня</p>
+                        </div>
+                        <div class="bloodReserves__item">
+                            <div class="bloodReserves__info">
+                                <div class="bloodReserves__container">AB+</div>
+                                <div class="bloodReserves__blood"></div>
+                                <div class="bloodReserves__bottom"></div>
+                            </div>
+                            <p class="bloodReserves__term"><span>4</span><br> дня</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <p class="bloodReserves__text">Мы стремимся сохранить запасы на 6 дней в любое время, чтобы удовлетворить потребности пациентов в Казахстане</p>
+                <a class="bloodReserves__btn btn btn__red" href="#">Узнать больше</a>  
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="section">
+        <div class="container">
+            <div class="services__inner">
+                <h2 class="services__title section__title">Наши услуги</h2>
+                <div class="services__items">
+                    <a class="services__item" href="#">
+                        <img src="assets/img/services/01.jpg" alt="">
+                        <div class="services__description red">
+                            <p class="services__text">Лаборатория иммунногематологического<br> тестирование</p>
+                        </div>
+                    </a>
+                    <a class="services__item" href="#">
+                        <img src="assets/img/services/02.jpg" alt="">
+                        <div class="services__description red">
+                            <p class="services__text">Лаборатория диагностики трансфузионных инфекций</p>
+                        </div>
+                    </a>
+                    <a class="services__item" href="#">
+                        <img src="assets/img/services/03.jpg" alt="">
+                        <div class="services__description">
+                            <p class="services__text">Платные услуги</p>
+                        </div>
+                    </a>
+                    <a class="services__item" href="#">
+                        <img src="assets/img/services/04.jpg" alt="">
+                        <div class="services__description">
+                            <p class="services__text">Лаборатория иммуннологического типирования</p>
+                        </div>
+                    </a>
+                    <a class="services__item" href="#">
+                        <img src="assets/img/services/05.jpg" alt="">
+                        <div class="services__description">
+                            <p class="services__text">Лечебный плазмаферез</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="pressCenter section">
+        <div class="container">
+            <div class="pressCenter__inner">
+                <h2 class="section__title">Пресс центр</h2>
+                <div class="pressCenter__items">
+                    <a class="pressCenter__item"  href="#">
+                        <div class="pressCenter__main">
+                            <div class="pressCenter__preview">
+                                <img src="assets/img/pressCenter/01.jpg" alt="">
+                            </div>
+                            <div class="pressCenter__content">
+                                <div class="pressCenter__Itemtitle">Реформы здравоохранения: внедрение ОСМС продолжается</div>
+                                <p class="pressCenter__subTitle">Внедрение системы обязательного медицинского страхования будет продолжено в Казахстане с рядом законодательных нововведений, которые</p>
+                            </div>
+                        </div>                        
+                        <div>
+                            <div class="pressCenter__btn">Подробнее</div>
+                        </div>
+                    </a>
+                    <a class="pressCenter__item"  href="#">
+                        <div class="pressCenter__main">
+                            <div class="pressCenter__preview">
+                                <img src="assets/img/pressCenter/02.jpg" alt="">
+                            </div>
+
+                            <div class="pressCenter__content">
+                                <div class="pressCenter__Itemtitle">8 интересных фактов об иммуннотипировании органов и тканей</div>
+                                <p class="pressCenter__subTitle">АЛМАТЫ. КАЗИНФОРМ - 14 июня по всему миру отмечали Всемирный день донора. В Алматы присоединились к празднованию важной даты</p>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                        <div>
+                            <div class="pressCenter__btn">Подробнее</div>
+                        </div>
+                    </a>
+                    <a class="pressCenter__item"  href="#">
+                        <div class="pressCenter__main">
+                            <div class="pressCenter__preview">
+                                <img src="assets/img/pressCenter/03.jpg" alt="">
+                            </div>
+                            
+                            <div class="pressCenter__content">
+                                <div class="pressCenter__Itemtitle">Всемирный день донора отметили в Алматы массовым флешмобом</div>
+                                <p class="pressCenter__subTitle">АЛМАТЫ. КАЗИНФОРМ - 14 июня по всему миру отмечали Всемирный день донора. В Алматы присоединились к празднованию важной даты</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div>
+                            <div class="pressCenter__btn">Подробнее</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="application">
+        <div class="container">
+            <div class="application__inner">
+                <div class="application__preview">
+                    <img src="assets/img/application.jpg" alt="">
+                </div>
+                <div class="application__form">
+                    <form action="/" method="post">
+                        <ul>
+                            <li>
+                                <label class="application__label" for="name">ФИО</label>
+                            </li>
+                            <li>
+                                <input class="application__input" type="text" id="name" required>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <label class="application__label" for="tel">Контактный Телефон</label>
+                            </li>
+                            <li>
+                                <input class="application__input" type="tel" id="tel" required>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>    
+                                <label class="application__label" for="email">e-mail</label>
+                            </li>
+                            <li>
+                                <input class="application__input" type="email" id="email" required>
+                            </li>
+                        </ul>
+    
+                        <button class="application__btn btn btn__white" type="submit">
+                            Оставит заявку
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-</section>
-
-<!-- skills -->
-<section class="skills section">
-    <div class="container">
-        <div class="skills__inner">
-            <div class="skills__header">
-                <h2 class="section__title">Skillset</h2>
-                <p class="section__text">With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
-            </div>
-            <div class="skills__all">
-                <div class="skill">
-                    <img src="assets/img/skill__product.svg" alt="">
-                    <h3 class="skill__title">Product Design</h3>
-                    <p class="skill__text">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
+    
+    
+    <section class="section">
+        <div class="container">
+            <div class="partners__inner">
+                <h2 class="section__title">Наши партнёры</h2>
+                <div class="partners__items">
+                    <a class="partners__item" href="#">
+                        <img class="partners__icon" src="assets/img/partners/logo/01.svg" alt="">
+                        <div class="partners__text">Стратегический план МЗ РК</div>
+                    </a>
+                    <a class="partners__item" href="#">
+                        <img class="partners__icon" src="assets/img/partners/logo/02.svg" alt="">
+                        <div class="partners__text">Государственная программа развития здравоохранения РК на 2020 – 2025 годы</div>
+                    </a>
+                    <a class="partners__item" href="#">
+                        <img class="partners__icon" src="assets/img/partners/logo/03.svg" alt="">
+                        <div class="partners__text">Фонд медицинского страхования</div>
+                    </a>
+                    <a class="partners__item" href="#">
+                        <img class="partners__icon" src="assets/img/partners/logo/04.svg" alt="">
+                        <div class="partners__text">Национальный центр проблем формирования здорового образа жизни</div>
+                    </a>
+                    <a class="partners__item" href="#">
+                        <img class="partners__icon" src="assets/img/partners/logo/05.svg" alt="">
+                        <div class="partners__text">Электронное правительство</div>
+                    </a>
+                    <a class="partners__item" href="#">
+                        <img class="partners__icon" src="assets/img/partners/logo/06.svg" alt="">
+                        <div class="partners__text">План нации - 100 конкретных шагов</div>
+                    </a>
                 </div>
-                <div class="skill">
-                    <img src="assets/img/skill__visual.svg" alt="">
-                    <h3 class="skill__title">Visual Design</h3>
-                    <p class="skill__text">My experience at dribbble has helped me learn to develop the eye for design. Colors, typography, layout and the whole package.</p>
-                </div>
-                <div class="skill">
-                    <img src="assets/img/skill__motion.svg" alt="">
-                    <h3 class="skill__title">Motion Design</h3>
-                    <p class="skill__text">I started my design journey with motion design in my college days. Motion is something that really fascinates me because of the flexibility of story telling. </p>
-                </div>
-                <div class="skill">
-                    <img src="assets/img/skill__photography.svg" alt="">
-                    <h3 class="skill__title">Photography</h3>
-                    <p class="skill__text">Clicking pictures really brings out the creative in me. Phtography really makes you look and percieve things in a different way.</p>
+    
+                <div class="partners__row">
+                    <a class="partners__col" href="#">
+                        <img src="assets/img/partners/photo/01.jpg" alt="">
+                    </a>
+                    <a class="partners__col" href="#">
+                        <img src="assets/img/partners/photo/02.jpg" alt="">
+                    </a>
+                    <a class="partners__col" href="#">
+                        <img src="assets/img/partners/photo/03.jpg" alt="">
+                    </a>
+                    <a class="partners__col" href="#">
+                        <img src="assets/img/partners/photo/04.jpg" alt="">
+                    </a>
+                    <a class="partners__col" href="#">
+                        <img src="assets/img/partners/photo/05.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- company -->
-<div class="company" >
-    <div class="container">
-        <div class="company__inner company__slider">
-            <div class="company__logo">
-                <img src="assets/img/company_01.svg" alt="">
-            </div>
-            <div class="company__logo">
-                <img src="assets/img/company_02.svg" alt="">
-            </div>
-            <div class="company__logo">
-                <img src="assets/img/company_03.svg" alt="">
-            </div>
-            <div class="company__logo">
-                <img src="assets/img/company_04.svg" alt="">
-            </div>
-            <div class="company__logo">
-                <img src="assets/img/company_05.svg" alt="">
-            </div>
-            <div class="company__logo">
-                <img src="assets/img/company_06.svg" alt="">
-            </div>
-        </div>
-    </div>
+    </section>
 </div>
 
-<!-- projects -->
-<section class="projects section" id="work">
-    <div class="container">
-        <div class="projects__inner">
-            <div class="projects__header">
-                <div class="section__subtitle">MY PROJECTS</div>
-                <h2 class="section__title">Work that I’ve done<br> for the past 8 years</h2>
-            </div>
-            <div class="projects__col projects__col_1">
 
-                <div class="project__preview">
-                    <img src="assets/img/project_1.jpg" alt="">
-                </div>
-
-                <div class="project__content">
-                    <h3 class="project__title">Restaurant Website Design</h3>
-                    <p class="project__text">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
-                </div>
-
-            </div>
-
-            <div class="projects__col projects__col_2">
-
-                <div class="project__preview">
-                    <img src="assets/img/project_2.jpg" alt="">
-                </div>
-
-                <div class="project__content">
-                    <h3 class="project__title">Restaurant Website Design</h3>
-                    <p class="project__text">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
-                </div>
-
-            </div>
-
-            <div class="projects__col projects__col_3">
-
-                <div class="project__preview">
-                    <img src="assets/img/project_3.jpg" alt="">
-                </div>
-
-                <div class="project__content">
-                    <h3 class="project__title">Restaurant Website Design</h3>
-                    <p class="project__text">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
-                </div>
-
-            </div>
-
-            <div class="projects__col projects__col_4">
-
-                <div class="project__preview">
-                    <img src="assets/img/project_4.jpg" alt="">
-                </div>
-
-                <div class="project__content">
-                    <h3 class="project__title">Restaurant Website Design</h3>
-                    <p class="project__text">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
-                </div>
-
-            </div>
-
-            <div class="projects__col project__col_btn">
-                <a class="projects__btn" href="#">VIeW ALL PROJECTS</a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- opinion -->
-<section class="opinion">
-    <div class="container">
-        <div class="opinion__inner">
-            <div class="opinion__content">
-                <div>
-                    <h2 class="opinion__title">Instagram</h2>
-                    <p class="opinion__text">If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. I’m an avid traveller and I capture the best moments that I would love to cherish with the world
-                    </p>
-                </div>
-
-                <a class="section__link" href="#" target="_blank">Follow me on IG</a>
-
-
-            </div>
-            <div class="opinion__preview">
-                <div>
-                    <img src="assets/img/opinion_2.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- dribbble -->
-<section class="dribbble section">
-    <div class="container">
-        <div class="dribbble__inner">
-            <div class="dribbble__content">
-                <h2 class="section__title">Dribbble</h2>
-                <p class="section__text dribbble__text">Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes and comments are appreciated.</p>
-
-                <a class="section__link section__link_white" href="#" target="_blank">Follow me on Dribbble</a>
-
-            </div>
-            <a class="dribbble__preview" href="#" target="_blank">
-                <div class="dribbble__dot">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="dribbble__photo">
-                    <img src="assets/img/dribbble_photo.png" alt="">
-                </div>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- about -->
-<section class="about section" id="about">
-    <div class="container">
-        <div class="about__inner">
-            <div class="about__header">
-                <h2 class="about__title section__title">This is what people say about me</h2>
-                <p class="section__text about__text">Here are a few lines from people who I have worked with over the past 8+ years in my design career.</p>
-
-                <a class="section__link section__link_white" href="#" target="_blank">See all testimonials</a>
-
-
-            </div>
-
-            <div class="ab__reviews">
-                <div class="ab__review">
-                    <div class="ab__review_preview">
-                        <img src="assets/img/about_1.jpg" alt="">
-                    </div>
-
-                    <div class="ab__review_content">
-                        <p class="ab__review_text">‘’Robin is one of the best designers I have worked with in my entire life. He is a designer who is very capable of taking up complex projects and delivers impeccable design.’’</p>
-
-                        <div class="ab__review__author_n">Richard Owens</div>
-                        <div class="ab__review_author_com">CEO, Company 1</div>
-
-                    </div>
-                </div>
-
-
-                <div class="ab__review">
-                    <div class="ab__review_preview">
-                        <img src="assets/img/about_2.jpg" alt="">
-                    </div>
-
-                    <div class="ab__review_content">
-                        <p class="ab__review_text">‘’Robin is one of the best designers I have worked with in my entire life. He is a designer who is very capable of taking up complex projects and delivers impeccable design.’’</p>
-
-                        <div class="ab__review__author_n">Emily Parker</div>
-                        <div class="ab__review_author_com">CEO, Company 2</div>
-
-                    </div>
-                </div>
-
-
-                <div class="ab__review">
-                    <div class="ab__review_preview">
-                        <img src="assets/img/about_3.jpg" alt="">
-                    </div>
-
-                    <div class="ab__review_content">
-                        <p class="ab__review_text">‘’Robin is one of the best designers I have worked with in my entire life. He is a designer who is very capable of taking up complex projects and delivers impeccable design.’’</p>
-
-                        <div class="ab__review__author_n">Vincent  Rudd</div>
-                        <div class="ab__review_author_com">CEO, Company 3</div>
-
-                    </div>
-                </div>
-
-        </div>
-
-
-        </div>
-    </div>
-</section>
-
-<!-- photography -->
-<section class="photography section" id="photography">
-    <div class="container">
-        <div class="photography__inner">
-            <div class="photography__header">
-                <h2 class="section__title">Photography</h2>
-                <p class="section__text">Here is a collection of my best travel pictures that I took while travelling places all around the world. </p>
-            </div>
-
-
-            <div class="photography__btns" id="photography__btns">
-                <a class="photography__btn italy__btn active" href="#">ITALY</a>
-                <a class="photography__btn australia__btn" href="#">AUSTRALIA</a>
-                <a class="photography__btn india__btn" href="#">INDIA</a>
-                <a class="photography__btn brazil__btn" href="#">BRAZIL</a>
-            </div>
-
-
-            <div class="photography__previews">
-                <div class="photography__photos show" id="italy__photos">
-                    <div class="photography__photo">
-                       <img src="assets/img/italy_1.jpg" alt="Italy Photography">
-                    </div>
-                    <div class="photography__photo">
-                       <img src="assets/img/italy_2.jpg" alt="Italy Photography">
-                    </div>
-                    <div class="photography__photo">
-                       <img src="assets/img/italy_3.jpg" alt="Italy Photography">
-                    </div>
-                    <div class="photography__photo">
-                       <img src="assets/img/italy_4.jpg" alt="Italy Photography">
-                    </div>
-                </div>
-
-                <div class="photography__photos" id="australia__photos">
-                    <div class="photography__photo">
-                        <img src="assets/img/australia_1.jpg" alt="Australia Photography">
-                    </div>
-                    <div class="photography__photo">
-                        <img src="assets/img/australia_2.jpg" alt="Australia Photography">
-                    </div>
-                    <div class="photography__photo">
-                        <img src="assets/img/australia_3.jpg" alt="Australia Photography">
-                    </div>
-                    <div class="photography__photo">
-                        <img src="assets/img/australia_4.jpg" alt="Australia Photography">
-                    </div>
-                </div>
-
-                <div class="photography__photos" id="india__photos">
-                    <div class="photography__photo">
-                        <img src="assets/img/india_1.jpg" alt="India Photography">
-                    </div>
-                    <div class="photography__photo">
-                        <img src="assets/img/india_2.jpg" alt="India Photography">
-                    </div>
-                    <div class="photography__photo">
-                        <img src="assets/img/india_3.jpg" alt="India Photography">
-                    </div>
-                    <div class="photography__photo">
-                        <img src="assets/img/india_4.jpg" alt="India Photography">
-                    </div>
-                </div>
-
-                <div class="photography__photos" id="brazil__photos">
-                    <div class="photography__photo">
-                        <img src="assets/img/brazil_1.jpg" alt="Brazil Photography">
-                    </div>
-                    <div class="photography__photo">
-                        <img src="assets/img/brazil_2.jpg" alt="Brazil Photography">
-                    </div>
-                    <div class="photography__photo">
-                        <img src="assets/img/brazil_3.jpg" alt="Brazil Photography">
-                    </div>
-                    <div class="photography__photo">
-                        <img src="assets/img/brazil_4.jpg" alt="Brazil Photography">
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- subscribe -->
-<section class="subscribe section" id="subscribe">
-    <div class="container">
-        <div class="subscribe__inner">
-            <div class="subscribe__first_col">
-                <h2 class="section__title">Let’s get started</h2>
-                <p class="section__text">Now that you know a lot about me, let me know if you are interested to work with me.</p>
-            </div>
-
-            <form action="/" method="post">
-                <div>
-                    <label class="form__label" for="name">Name</label>
-                    <input class="form__input" type="text" id="name" required>
-                </div>
-                <div>
-                    <label class="form__label" for="email">Email</label>
-                    <input class="form__input" type="email" id="email" required>
-                </div>
-                <div>
-                    <label class="form__label" for="message">Message</label>
-                    <textarea class="form__input form__message" name="text" id="message" required></textarea>
-                </div>
-                <button class="form__btn" type="submit">
-                    Let’s get started
-                </button>
-            </form>
-        </div>
-    </div>
-</section>
-
-<!-- footer -->
 <footer class="footer">
     <div class="container">
-        <div class="footer__main">
-            <div class="footer__left">
-                <a class="footer__logo" href="#" data-scroll="#intro">
-                    <img src="assets/img/logo_02.svg" alt="">
-                </a>
-                <div class="footer__sn">
-                    <a href="#" class="footer__sn_link" target="_blank">
-                        <img src="assets/img/Twitter.svg" alt="">
+        <div class="footer__inner">
+            <div class="footer__col">               
+                <div class="footer__title">
+                    <img class="footer__logo" src="assets/img/logos/03.svg" alt="#">
+                    <h2 class="footer__ins">Спаси жизнь -<br> стань донором крови</h2>
+                </div>
+                <div class="footer__socialNetworks">
+                    <a class="footer__sn" href="#">
+                        <img src="assets/img/SocialNetwork/facebook_white.svg" alt="">
                     </a>
-                    <a href="#" class="footer__sn_link" target="_blank">
-                        <img src="assets/img/Dribbble.svg" alt="">
-                    </a>
-                    <a href="#" class="footer__sn_link" target="_blank">
-                        <img src="assets/img/LinkedIn.svg" alt="">
+                    <a class="footer__sn" href="#">
+                        <img src="assets/img/SocialNetwork/instagram_white.svg" alt="">
                     </a>
                 </div>
             </div>
 
-            <div class="footer__right">
-                <ul class="footer__column">
-                    <li class="footer__column_item">
-                        <a href="#" data-scroll="#intro">Home</a>
-                    </li>
-                    <li class="footer__column_item footer__column_item_2">
-                        <a href="#" data-scroll="#about">About</a>
-                    </li>
-                    <li class="footer__column_item footer__column_item_3">
-                        <a href="#" data-scroll="#work">Work</a>
-                    </li>
-                    <li class="footer__column_item footer__column_item_4">
-                        <a href="#">Process</a>
-                    </li>
-                    <li class="footer__column_item footer__column_item_5">
-                        <a href="#">Store</a>
-                    </li>
-                    <li class="footer__column_item footer__column_item_6">
-                        <a href="#">Blog</a>
-                    </li>
-                    <li class="footer__column_item footer__column_item_7">
-                        <a href="#">Reading List</a>
-                    </li>
-                </ul>
+            <div class="footer__col">
+                <div class="footer__item">
+                    <p class="footer__text">Республика Казахстан, индекс 050060, г.Алматы, ул. Утепова, 1</p>
+                </div>
+                <div class="footer__item">
+                    <h6 class="footer__itemTitle">Регистратура:</h6>
+                    <ul>
+                        <li>
+                            <a class="footer__link" href="#">8(727) 246-09-23</a>
+                        </li>
+                        <li>
+                            <a class="footer__link" href="#">8(727) 246-09-23</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__item">
+                    <h6 class="footer__itemTitle">Лабораторные услуги:</h6>
+                    <a class="footer__link" href="#">8(727) 246-09-23 </a>
+                </div>
+
+                <div class="footer__item">
+                    <h6 class="footer__itemTitle">Приемная директора:</h6>
+                    <a class="footer__link" href="#">rck@med.mail.kz</a>
+                </div>
             </div>
+
+            <div class="footer__col">
+                <div class="footer__item">
+                    <h6 class="footer__itemTitle">Отдел по связям с общественностью:</h6>
+                    <a class="footer__link" href="#">8(727) 246-09-23</a>
+                </div>
+
+                <div class="footer__item">
+                    <h6 class="footer__itemTitle">Служба поддержки донора:</h6>
+                    <p>Укибай Майра Сеилгазиновна Руководитель управления по контролю качества </p>
+                    <a class="footer__link" href="#">8(705) 577-77-44</a>
+                </div>
+
+                <div class="footer__item">
+                    <p><span>Внимание!</span> Не можете дозвониться в вечернее и ночное время в отделение выдачи препаратов крови по городскому телефону, перезвоните пожалуйста на мобильный номер: </p>
+                    <a class="footer__link" href="#">8(701) 500 5510</a>
+                </div>
+            </div>
+            
         </div>
-        <div class="footer__copyright">Not Copyright 2020 • Robin Williams. Webflow&nbsp;cloneable</div>
+        <div class="footer__copyright">© All rights reserved – CodeTau</div>
     </div>
 </footer>
 
+
+<div class="search modal" id="modal__search">
+    <div class="search__inner">
+        <div class="search__close">+</div>
+        <form class="search__form">
+            <input type="text" id="search-input" placeholder="Поиск">
+        </form>
+    </div>
+</div>
+
+
 <!-- JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/app.js"></script>
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
